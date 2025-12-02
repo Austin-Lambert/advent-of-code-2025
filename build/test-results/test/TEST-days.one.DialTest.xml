@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="days.one.DialTest" tests="6" skipped="0" failures="0" errors="0" timestamp="2025-12-02T13:11:35" hostname="Austins-MacBook-Pro.local" time="0.033">
+  <properties/>
+  <testcase name="it will wrap around correctly()" classname="days.one.DialTest" time="0.023"/>
+  <testcase name="it will turn left()" classname="days.one.DialTest" time="0.0"/>
+  <testcase name="it will turn right()" classname="days.one.DialTest" time="0.0"/>
+  <testcase name="it will count the times it passed 0()" classname="days.one.DialTest" time="0.001"/>
+  <testcase name="it will count the times it was set to 0()" classname="days.one.DialTest" time="0.001"/>
+  <testcase name="it will handle large turns correctly()" classname="days.one.DialTest" time="0.001"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
