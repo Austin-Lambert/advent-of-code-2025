@@ -1,5 +1,6 @@
 plugins {
     kotlin("jvm") version "2.1.10"
+    application
 }
 
 group = "dev.lambo"
@@ -15,4 +16,12 @@ dependencies {
 
 tasks.test {
     useJUnitPlatform()
+}
+
+application {
+    mainClass.set("dev.lambo.MainKt")
+}
+
+tasks.named("run", JavaExec::class) {
+    standardInput = System.`in`
 }

@@ -1,11 +1,15 @@
 package dev.lambo.days.one
 
+import dev.lambo.days.Day
 import java.io.InputStream
 
-class DayOne {
+class DayOne: Day {
+    override val file: String
+        get() = "day-one.txt"
+
     private val dial = Dial(50)
 
-    fun runPartOne(input: InputStream?): String {
+    override fun runPartOne(input: InputStream?): String {
         try {
             input?.bufferedReader()?.forEachLine {
                 processLine(it)
@@ -19,7 +23,7 @@ class DayOne {
         return answer
     }
 
-    fun runPartTwo(input: InputStream?): String {
+    override fun runPartTwo(input: InputStream?): String {
         try {
             input?.bufferedReader()?.forEachLine {
                 processLine(it)
@@ -45,4 +49,6 @@ class DayOne {
         val amount = line.drop(1).toInt()
         return Pair(direction, amount)
     }
+
+    override fun toString(): String = "Day One: Secret Entrance"
 }

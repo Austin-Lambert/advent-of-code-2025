@@ -18,7 +18,7 @@ class DayOneTest {
     inner class PartOne {
         @Test
         fun `it will pass the challenge test case`() {
-            val resource = javaClass.getResourceAsStream("/day-one-test-fixture.txt")
+            val resource = javaClass.getResourceAsStream("/day-one-test.txt")
             val answer = sut.runPartOne(resource)
             assertEquals(3, answer.toInt())
         }
@@ -40,7 +40,7 @@ class DayOneTest {
     inner class PartTwo {
         @Test
         fun `it will pass the challenge test case`() {
-            val resource = javaClass.getResourceAsStream("/day-one-test-fixture.txt")
+            val resource = javaClass.getResourceAsStream("/day-one-test.txt")
             val answer = sut.runPartTwo(resource)
             assertEquals(6, answer.toInt())
         }
