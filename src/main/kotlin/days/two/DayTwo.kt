@@ -1,6 +1,6 @@
-package dev.lambo.days.two
+package days.two
 
-import dev.lambo.days.Day
+import days.Day
 import java.io.InputStream
 
 class DayTwo : Day {

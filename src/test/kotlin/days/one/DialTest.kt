@@ -1,7 +1,7 @@
 package days.one
 
-import dev.lambo.days.one.Dial
-import dev.lambo.days.one.Direction
+import days.one.Dial
+import days.one.Direction
 import org.junit.jupiter.api.Test
 import kotlin.test.assertEquals
 
@@ -27,7 +27,7 @@ class DialTest {
     @Test
     fun `it will wrap around correctly`() {
         sut = Dial(99)
-        sut.turn(Direction.RIGHT,1)
+        sut.turn(Direction.RIGHT, 1)
         assertEquals(0, sut.setting)
         sut.turn(Direction.LEFT, 1)
         assertEquals(99, sut.setting)

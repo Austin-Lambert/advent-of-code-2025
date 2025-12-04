@@ -1,6 +1,6 @@
 package days.two
 
-import dev.lambo.days.two.DayTwo
+import days.two.DayTwo
 import org.junit.jupiter.api.Nested
 import org.junit.jupiter.api.Test
 import kotlin.test.assertEquals

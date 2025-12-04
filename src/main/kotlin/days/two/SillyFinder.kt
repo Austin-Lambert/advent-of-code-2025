@@ -1,4 +1,4 @@
-package dev.lambo.days.two
+package days.two
 
 class SillyFinder {
     fun findSingleRepeatSequences(range: String): List<String> {

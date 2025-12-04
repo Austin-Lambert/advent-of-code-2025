@@ -1,6 +1,6 @@
 package days.two
 
-import dev.lambo.days.two.SillyFinder
+import days.two.SillyFinder
 import org.junit.jupiter.api.Test
 import kotlin.test.assertEquals
 

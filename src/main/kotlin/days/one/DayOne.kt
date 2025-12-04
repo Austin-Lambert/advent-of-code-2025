@@ -1,9 +1,9 @@
-package dev.lambo.days.one
+package days.one
 
-import dev.lambo.days.Day
+import days.Day
 import java.io.InputStream
 
-class DayOne: Day {
+class DayOne : Day {
     override val file: String
         get() = "day-one.txt"
 

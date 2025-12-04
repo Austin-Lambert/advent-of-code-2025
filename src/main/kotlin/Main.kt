@@ -1,7 +1,7 @@
 package dev.lambo
 
-import dev.lambo.days.DayPicker
-import dev.lambo.days.one.DayOne
+import days.DayPicker
+import days.one.DayOne
 
 fun main() {
     println("Hello World!")

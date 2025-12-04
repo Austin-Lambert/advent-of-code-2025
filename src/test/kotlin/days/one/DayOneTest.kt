@@ -1,6 +1,6 @@
 package days.one
 
-import dev.lambo.days.one.DayOne
+import days.one.DayOne
 import org.junit.jupiter.api.BeforeEach
 import org.junit.jupiter.api.Nested
 import kotlin.test.Test

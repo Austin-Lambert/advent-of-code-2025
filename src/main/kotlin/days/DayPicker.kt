@@ -1,7 +1,8 @@
-package dev.lambo.days
+package days
 
-import dev.lambo.days.one.DayOne
-import dev.lambo.days.two.DayTwo
+import days.one.DayOne
+import days.two.DayTwo
+import days.three.DayThree
 
 class DayPicker {
     fun go(): Day {
@@ -11,9 +12,10 @@ class DayPicker {
     }
 
     private fun parseDay(dayNumber: Int): Day {
-        return when(dayNumber) {
+        return when (dayNumber) {
             1 -> DayOne()
             2 -> DayTwo()
+            3 -> DayThree()
             else -> DayOne()
         }
     }

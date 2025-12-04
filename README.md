@@ -37,3 +37,17 @@ Part one defines silliness as a number that is two repeated numbers. For example
 #### Part Two
 
 The twist here is that we really needed to define silliness as a number that is any number of repeated numbers. So this definition of silliness now includes the prior part's, but expands it to also include numbers like 151515, 743743743743, and 111. To solve this problem, I simply genericized the solution of part 1 and allowed you to specify the number of repeated digits to check for. Then I would check each number in the range of 1 to the id's number of digits divided by 2.
+
+### [Day Three: Lobby](https://adventofcode.com/2025/day/3)
+
+An Escalator that you need to use is missing power. You need to activate some batteries in order to give it the juice it needs. The batteries are arranged into battery banks, and each battery has a single-digit "joltage". You need to determine the maximum joltage of a battery bank by grouping the digits together in order. An example of a battery bank would be `3385328475928` where each digit corresponds to a single battery's joltage rating.
+
+#### Part One
+
+Initially you try to turn on only two of the batteries from each battery bank. For the above example, you'd expect a joltage of `98`. My solution to this was to loop backwards from 9 to 0, until I find the first largest digit that wasn't in the last index. Then once I found the first largest digit, I sliced the list of batteries to the last slice and grabbed the maximum from that sliced list. Then put the two together to get my answer.
+
+#### Part Two
+
+Turns out that only turning on two of the batteries didn't quite give it enough joltage. So, now we have to turn on 12 instead of two. I briefly side-tracked myself by trying to solve the problem by grabbing all the 9's and then all the 8's until I got 12 digits pulled out into a string. However, this is not a valid solution. 
+
+Finally I ended with a solution that uses recursion, and searches for the highest joltage that appears at an index that still allows for enough digits to come after it and reduces the search space by anything after that digit.

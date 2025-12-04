@@ -1,4 +1,4 @@
-package dev.lambo.days
+package days
 
 import java.io.InputStream
 

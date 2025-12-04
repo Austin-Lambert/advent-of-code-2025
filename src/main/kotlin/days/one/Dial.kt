@@ -1,4 +1,4 @@
-package dev.lambo.days.one
+package days.one
 
 class Dial(private val initial: Int = 0) {
     var setting: Int = initial
@@ -14,7 +14,7 @@ class Dial(private val initial: Int = 0) {
         0.until(amount).map {
             tick(direction)
         }
-        if(setting == 0) setToZero++
+        if (setting == 0) setToZero++
     }
 
     private fun tick(direction: Direction) {
@@ -23,8 +23,9 @@ class Dial(private val initial: Int = 0) {
                 if (setting == 0) setting = 99
                 else setting--
             }
+
             Direction.RIGHT -> {
-                if(setting == 99) setting = 0
+                if (setting == 99) setting = 0
                 else setting++
             }
         }

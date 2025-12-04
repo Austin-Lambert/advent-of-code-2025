@@ -1,4 +1,4 @@
-package dev.lambo.days.one
+package days.one
 
 enum class Direction(val abbr: Char) {
     LEFT('L'),
