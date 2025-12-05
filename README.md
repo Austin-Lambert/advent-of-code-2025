@@ -50,4 +50,4 @@ Initially you try to turn on only two of the batteries from each battery bank. F
 
 Turns out that only turning on two of the batteries didn't quite give it enough joltage. So, now we have to turn on 12 instead of two. I briefly side-tracked myself by trying to solve the problem by grabbing all the 9's and then all the 8's until I got 12 digits pulled out into a string. However, this is not a valid solution. 
 
-Finally I ended with a solution that uses recursion, and searches for the highest joltage that appears at an index that still allows for enough digits to come after it and reduces the search space by anything after that digit.
+Finally, I ended with a solution that uses recursion, and searches for the highest joltage that appears at an index that still allows for enough digits to come after it and reduces the search space by anything after that digit.
