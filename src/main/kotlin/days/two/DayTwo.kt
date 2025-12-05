@@ -3,11 +3,13 @@ package days.two
 import days.Day
 import java.io.InputStream
 
-class DayTwo : Day {
+class DayTwo : Day() {
+    override fun toString(): String = "Day 2: Gift Shop"
+
     override val file: String
         get() = "day-two.txt"
 
-    override fun runPartOne(input: InputStream?): String {
+    override fun partOne(input: InputStream?): String {
         if (input == null) return ""
         val finder = SillyFinder()
         val range = input.bufferedReader().readLine().split(',')
@@ -17,7 +19,7 @@ class DayTwo : Day {
         }
     }
 
-    override fun runPartTwo(input: InputStream?): String {
+    override fun partTwo(input: InputStream?): String {
         if (input == null) return ""
         val finder = SillyFinder()
         val range = input.bufferedReader().readLine().split(',')
@@ -26,6 +28,4 @@ class DayTwo : Day {
             (acc.toLong() + s.toLong()).toString()
         }
     }
-
-    override fun toString(): String = "Day Two: Gift Shop"
 }

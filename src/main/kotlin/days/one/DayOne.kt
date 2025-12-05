@@ -3,13 +3,15 @@ package days.one
 import days.Day
 import java.io.InputStream
 
-class DayOne : Day {
+class DayOne : Day() {
+    override fun toString(): String = "Day 1: Secret Entrance"
+
     override val file: String
         get() = "day-one.txt"
 
     private val dial = Dial(50)
 
-    override fun runPartOne(input: InputStream?): String {
+    override fun partOne(input: InputStream?): String {
         try {
             input?.bufferedReader()?.forEachLine {
                 processLine(it)
@@ -23,7 +25,7 @@ class DayOne : Day {
         return answer
     }
 
-    override fun runPartTwo(input: InputStream?): String {
+    override fun partTwo(input: InputStream?): String {
         try {
             input?.bufferedReader()?.forEachLine {
                 processLine(it)
@@ -41,7 +43,6 @@ class DayOne : Day {
     private fun processLine(line: String) {
         val (direction, amount) = parseLine(line)
         dial.turn(direction, amount)
-//        println("$line - $dial")
     }
 
     private fun parseLine(line: String): Pair<Direction, Int> {
@@ -49,6 +50,4 @@ class DayOne : Day {
         val amount = line.drop(1).toInt()
         return Pair(direction, amount)
     }
-
-    override fun toString(): String = "Day One: Secret Entrance"
 }

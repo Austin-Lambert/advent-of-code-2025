@@ -1,18 +1,10 @@
 package dev.lambo
 
-import days.DayPicker
-import days.one.DayOne
+import days.Day
 
 fun main() {
     println("Hello World!")
     println("This is my attempt at solving the Advent of Code challenges in Kotlin.")
-    val toRun = DayPicker().go()
-
-    println("Running $toRun...\t")
-    val partOne = toRun.runPartOne({}.javaClass.getResourceAsStream("/${toRun.file}"))
-    println("Part One Answer: $partOne")
-    val partTwo = toRun.runPartTwo({}.javaClass.getResourceAsStream("/${toRun.file}"))
-    println("Part Two Answer: $partTwo")
-
+    Day.pick().run()
     println("All done for today! Happy Coding!")
 }
